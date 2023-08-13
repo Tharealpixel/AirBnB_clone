@@ -9,7 +9,7 @@ from typing import List
 
 
 class Place(BaseModel):
-    """The Place Model"""
+    """The Place Model dun dun daa"""
 
     # Attributes
     city_id: str = ""
