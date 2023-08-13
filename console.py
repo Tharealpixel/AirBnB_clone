@@ -134,7 +134,8 @@ class HBNBCommand(Cmd):
         print(*classes)
 
     def handle_class_methods(self, arg):
-        """Handle Class Methods
+        """
+        Handle Class Methods
         <cls>.all(), <cls>.show() etc
         """
 
@@ -168,12 +169,12 @@ class HBNBCommand(Cmd):
         return Cmd.default(self, arg)
 
     def emptyline(self):
-        """Override empty line to do nothing"""
+        """Override to do nothing"""
         return
 
 
 def parse(line: str):
-    """splits a line by spaces"""
+    """splits a line by space"""
     args = shlex.split(line)
     return args, len(args)
 
